@@ -1,36 +1,30 @@
 import 'dart:convert';
 
-import 'package:get_storage/get_storage.dart';
+import 'package:hive/hive.dart';
 
 class ManagingSqfliteTableNewModel {
-
   SqfliteTableNewModel get() {
-    final box = GetStorage();
-
-    String? json = box.read('ManagingSqfliteTableNewModel');
+    String? json = Hive.box().get('ManagingSqfliteTableNewModel');
     if (json == null) return SqfliteTableNewModel();
 
     return SqfliteTableNewModel.fromString(json);
   }
 
   upsert(SqfliteTableNewModel obj) {
-    final box = GetStorage();
     String json = obj.toString();
-    box.write('ManagingSqfliteTableNewModel', json);
+    Hive.box().put('ManagingSqfliteTableNewModel', json);
   }
 
   delete() {
-    final box = GetStorage();
-    box.remove('ManagingSqfliteTableNewModel');
+    Hive.box().delete('ManagingSqfliteTableNewModel');
   }
 }
 
-
 class SqfliteTableNewModel {
-
   int UpdateMillis = 0;
 
   int Version = 1;
+
   // int I002 = 0;
   // int I003 = 0;
   // int I004 = 0;
@@ -296,6 +290,7 @@ class SqfliteTableNewModel {
   // num R030 = 0;
   //
   List<dynamic> Columns = [];
+
   // List<dynamic> L001 = [];
   // List<dynamic> L002 = [];
   // List<dynamic> L003 = [];
@@ -359,7 +354,6 @@ class SqfliteTableNewModel {
   // NewEnum E018 = NewEnum.NotSelected;
   // NewEnum E019 = NewEnum.NotSelected;
   // NewEnum E020 = NewEnum.NotSelected;
-
 
   @override
   String toString() {
@@ -1002,7 +996,6 @@ class SqfliteTableNewModel {
     // obj.J019 = (jsonDecode(data['J019'] ?? '[]') as List).map((item) => NewModel2.fromString(item)).toList();
     // obj.J020 = (jsonDecode(data['J020'] ?? '[]') as List).map((item) => NewModel2.fromString(item)).toList();
 
-
     // obj.E000 = NewEnum.fromString(data['E000'] ?? NewEnum.NotSelected.toStringValue());
     // obj.E001 = NewEnum.fromString(data['E001'] ?? NewEnum.NotSelected.toStringValue());
     // obj.E002 = NewEnum.fromString(data['E002'] ?? NewEnum.NotSelected.toStringValue());
@@ -1024,7 +1017,6 @@ class SqfliteTableNewModel {
     // obj.E018 = NewEnum.fromString(data['E018'] ?? NewEnum.NotSelected.toStringValue());
     // obj.E019 = NewEnum.fromString(data['E019'] ?? NewEnum.NotSelected.toStringValue());
     // obj.E020 = NewEnum.fromString(data['E020'] ?? NewEnum.NotSelected.toStringValue());
-
 
     return obj;
   }

@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:get_storage/get_storage.dart';
+import 'package:hive/hive.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -1310,11 +1310,11 @@ class NewModelSqflite {
 
   /// sql 인덱싱 해주기(필요한 부분에 인덱스를 추가해줍니다.), 오름차순 내림차순, 및 복합 쿼리같은경우 모두 설정해주면 됩니다.
   createIndexing(Database myDatabase) async {
-    final box = GetStorage();
-    if (box.read("NewModelSqfliteIndex") != null) {
+
+    if (Hive.box().get("NewModelSqfliteIndex") != null) {
       return;
     }
-    box.write("NewModelSqfliteIndex", true);
+    Hive.box().put("NewModelSqfliteIndex", true);
 
     /// 예시
     // await myDatabase.execute("create index I000index on NewModel (I000)"); // 단일 인덱싱
