@@ -3,7 +3,7 @@ description: "create a mobile database model template for juneflow."
 #publish_to: 'none'
 repository: https://github.com/juneflow-songdo/june_mobile_database_template
 
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
@@ -40,7 +40,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   hive_module: ^1.0.1
-  june_model: ^1.0.1
+  june_model:
   june_view: ^1.3.0+2
   june_view_more: ^1.7.0
   screenutil_module: ^1.0.1

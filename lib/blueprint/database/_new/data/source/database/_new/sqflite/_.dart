@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
-import '../../../../../domain/entity/model/new/model.dart';
+import '../../../../../domain/entity/model/_new/model.dart';
 import 'util/managing_table.dart';
 
 class NewModelSqflite {

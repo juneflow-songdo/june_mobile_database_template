@@ -1,5 +1,5 @@
 import 'package:get_storage/get_storage.dart';
-import '../../../../../domain/entity/model/new/model.dart';
+import '../../../../../domain/entity/model/_new/model.dart';
 
 class NewModelGetStorage {
 

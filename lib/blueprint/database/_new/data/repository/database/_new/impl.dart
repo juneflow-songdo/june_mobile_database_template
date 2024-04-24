@@ -1,4 +1,4 @@
 import '../../../../../../../main.dart';
-import '../../../../domain/repository/database/new/interface.dart';
+import '../../../../domain/repository/database/_new/interface.dart';
 
 class NewRepo extends NewRepoInterface {}
