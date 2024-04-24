@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/View-Hub-007bff?style=for-the-badge&logo=flutter)](https://view.juneflow.org/)
 
 # june_mobile_database_template
-description here
+create a mobile database model template for juneflow.
 
 ##  Installation
 1. If the juneflow project doesn't exist, please create it by following [this guide](https://doc.juneflow.org/).
@@ -14,4 +14,4 @@ description here
  ```
 
 ## Usage
-Usage here
+you can easily create database model in [lib/blueprint/database/_new]

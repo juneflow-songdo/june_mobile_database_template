@@ -1,7 +1,7 @@
 name: june_mobile_database_template
-description: "Description here"
+description: "create a mobile database model template for juneflow."
 #publish_to: 'none'
-#repository: https://github.com/melodysdreamj/juneflow
+repository: https://github.com/juneflow-songdo/june_mobile_database_template
 
 version: 1.0.0
 
