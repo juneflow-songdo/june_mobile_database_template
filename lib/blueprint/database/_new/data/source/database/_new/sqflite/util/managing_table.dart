@@ -1,22 +1,22 @@
 import 'dart:convert';
 
-import 'package:hive/hive.dart';
+import '../../../../../../../../../main.dart';
 
 class ManagingSqfliteTableNewModel {
   SqfliteTableNewModel get() {
-    String? json = Hive.box().get('ManagingSqfliteTableNewModel');
+    String? json = prefs.getString('ManagingSqfliteTableNewModel');
     if (json == null) return SqfliteTableNewModel();
 
     return SqfliteTableNewModel.fromString(json);
   }
 
-  upsert(SqfliteTableNewModel obj) {
+  upsert(SqfliteTableNewModel obj) async {
     String json = obj.toString();
-    Hive.box().put('ManagingSqfliteTableNewModel', json);
+    await prefs.setString('ManagingSqfliteTableNewModel', json);
   }
 
-  delete() {
-    Hive.box().delete('ManagingSqfliteTableNewModel');
+  delete() async {
+    await prefs.remove('ManagingSqfliteTableNewModel');
   }
 }
 

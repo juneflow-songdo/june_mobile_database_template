@@ -1,5 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../../domain/entity/model/_new/model.dart';
+import '../../../../../../../../main.dart';
 
 class NewModelSharedPreferences {
 

@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:hive/hive.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
 import '../../../../../domain/entity/model/_new/model.dart';
 import 'util/managing_table.dart';
+import '../../../../../../../../main.dart';
 
 class NewModelSqflite {
   Future<NewModel?> get(String docId) async {
@@ -812,7 +812,6 @@ class NewModelSqflite {
     // object.J019 = (jsonDecode(map["J019"] ?? "[]") as List).map((item) => NewSubModel.fromString(item)).toList();
     // object.J020 = (jsonDecode(map["J020"] ?? "[]") as List).map((item) => NewSubModel.fromString(item)).toList();
 
-
     // object.E000 = NewEnum.fromString(map["E000"] ?? NewEnum.NotSelected.toStringValue());
     // object.E001 = NewEnum.fromString(map["E001"] ?? NewEnum.NotSelected.toStringValue());
     // object.E002 = NewEnum.fromString(map["E002"] ?? NewEnum.NotSelected.toStringValue());
@@ -1226,7 +1225,7 @@ class NewModelSqflite {
       _.Version = 1;
       _.UpdateMillis = DateTime.now().millisecondsSinceEpoch;
       _.Columns = columns;
-      ManagingSqfliteTableNewModel().upsert(_);
+      await ManagingSqfliteTableNewModel().upsert(_);
     }
 
     // 기존 컬럼과의 비교를 해줍니다. (없어진건 삭제하고 새로나온건 추가하는식으로 가자)
@@ -1243,7 +1242,7 @@ class NewModelSqflite {
       _.Version++;
       _.UpdateMillis = DateTime.now().millisecondsSinceEpoch;
       _.Columns = columns;
-      ManagingSqfliteTableNewModel().upsert(_);
+      await ManagingSqfliteTableNewModel().upsert(_);
     }
 
     // 추가해야하는 부분을 진행해줍니다.
@@ -1310,11 +1309,11 @@ class NewModelSqflite {
 
   /// sql 인덱싱 해주기(필요한 부분에 인덱스를 추가해줍니다.), 오름차순 내림차순, 및 복합 쿼리같은경우 모두 설정해주면 됩니다.
   createIndexing(Database myDatabase) async {
-
-    if (Hive.box().get("NewModelSqfliteIndex") != null) {
+    if (prefs.getBool("NewModelSqfliteIndex") != null) {
       return;
     }
-    Hive.box().put("NewModelSqfliteIndex", true);
+
+    await prefs.setBool("NewModelSqfliteIndex", true);
 
     /// 예시
     // await myDatabase.execute("create index I000index on NewModel (I000)"); // 단일 인덱싱

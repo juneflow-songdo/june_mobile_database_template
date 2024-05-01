@@ -1,6 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../../../../../domain/entity/model/_new/model.dart';
+import '../../../../../../../../main.dart';
 
 
 class NewModelFlutterSecureStorage {

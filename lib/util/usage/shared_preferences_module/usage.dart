@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 
 import '../../../main.dart';
 
@@ -7,19 +6,51 @@ String _noteName = "Note";
 
 T _button00 = T("00", onTap: (BuildContext context) async {
   ////////////////////////////////////////
-  Hive.box().put('key', 12423);
+
+  // Save an integer value to 'counter' key.
+  await prefs.setInt('counter', 10);
+  // Save an boolean value to 'repeat' key.
+  await prefs.setBool('repeat', true);
+  // Save an double value to 'decimal' key.
+  await prefs.setDouble('decimal', 1.5);
+  // Save an String value to 'action' key.
+  await prefs.setString('action', 'Start');
+  // Save an list of strings to 'items' key.
+  await prefs.setStringList('items', <String>['Earth', 'Moon', 'Sun']);
   ////////////////////////////////////////
 });
 
 T _button01 = T("01", onTap: (BuildContext context) async {
   ////////////////////////////////////////
-  int value = Hive.box().get('key');
-  print(value); // 123
+
+  // Try reading data from the 'counter' key. If it doesn't exist, returns null.
+  final int? counter = prefs.getInt('counter');
+  print(counter); // 10
+
+  // Try reading data from the 'repeat' key. If it doesn't exist, returns null.
+  final bool? repeat = prefs.getBool('repeat');
+  print(repeat); // true
+
+  // Try reading data from the 'decimal' key. If it doesn't exist, returns null.
+  final double? decimal = prefs.getDouble('decimal');
+  print(decimal); // 1.5
+
+  // Try reading data from the 'action' key. If it doesn't exist, returns null.
+  final String? action = prefs.getString('action');
+  print(action); // Start
+
+  // Try reading data from the 'items' key. If it doesn't exist, returns null.
+  final List<String>? items = prefs.getStringList('items');
+  print(items); // [Earth, Moon, Sun]
+
   ////////////////////////////////////////
 });
 
 T _button02 = T("02", onTap: (BuildContext context) async {
   ////////////////////////////////////////
+
+  // Remove data for the 'counter' key.
+  await prefs.remove('counter');
 
   ////////////////////////////////////////
 });
