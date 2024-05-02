@@ -274,7 +274,27 @@ class NewModel {
   // num R028 = 0;
   // num R029 = 0;
   // num R030 = 0;
-  //
+  // DateTime T000 = DateTime.now();
+  // DateTime T001 = DateTime.now();
+  // DateTime T002 = DateTime.now();
+  // DateTime T003 = DateTime.now();
+  // DateTime T004 = DateTime.now();
+  // DateTime T005 = DateTime.now();
+  // DateTime T006 = DateTime.now();
+  // DateTime T007 = DateTime.now();
+  // DateTime T008 = DateTime.now();
+  // DateTime T009 = DateTime.now();
+  // DateTime T010 = DateTime.now();
+  // DateTime T011 = DateTime.now();
+  // DateTime T012 = DateTime.now();
+  // DateTime T013 = DateTime.now();
+  // DateTime T014 = DateTime.now();
+  // DateTime T015 = DateTime.now();
+  // DateTime T016 = DateTime.now();
+  // DateTime T017 = DateTime.now();
+  // DateTime T018 = DateTime.now();
+  // DateTime T019 = DateTime.now();
+  // DateTime T020 = DateTime.now();
   // List<dynamic> L000 = [];
   // List<dynamic> L001 = [];
   // List<dynamic> L002 = [];
@@ -630,6 +650,27 @@ class NewModel {
       // 'R028': R028,
       // 'R029': R029,
       // 'R030': R030,
+      // 'T000': T000.millisecondsSinceEpoch,
+      // 'T001': T001.millisecondsSinceEpoch,
+      // 'T002': T002.millisecondsSinceEpoch,
+      // 'T003': T003.millisecondsSinceEpoch,
+      // 'T004': T004.millisecondsSinceEpoch,
+      // 'T005': T005.millisecondsSinceEpoch,
+      // 'T006': T006.millisecondsSinceEpoch,
+      // 'T007': T007.millisecondsSinceEpoch,
+      // 'T008': T008.millisecondsSinceEpoch,
+      // 'T009': T009.millisecondsSinceEpoch,
+      // 'T010': T010.millisecondsSinceEpoch,
+      // 'T011': T011.millisecondsSinceEpoch,
+      // 'T012': T012.millisecondsSinceEpoch,
+      // 'T013': T013.millisecondsSinceEpoch,
+      // 'T014': T014.millisecondsSinceEpoch,
+      // 'T015': T015.millisecondsSinceEpoch,
+      // 'T016': T016.millisecondsSinceEpoch,
+      // 'T017': T017.millisecondsSinceEpoch,
+      // 'T018': T018.millisecondsSinceEpoch,
+      // 'T019': T019.millisecondsSinceEpoch,
+      // 'T020': T020.millisecondsSinceEpoch,
       // 'L000': L000,
       // 'L001': L001,
       // 'L002': L002,
@@ -987,6 +1028,27 @@ class NewModel {
     // obj.R028 = data['R028'] ?? 0;
     // obj.R029 = data['R029'] ?? 0;
     // obj.R030 = data['R030'] ?? 0;
+    // obj.T000 = DateTime.fromMillisecondsSinceEpoch(data['T000'] ?? 0);
+    // obj.T001 = DateTime.fromMillisecondsSinceEpoch(data['T001'] ?? 0);
+    // obj.T002 = DateTime.fromMillisecondsSinceEpoch(data['T002'] ?? 0);
+    // obj.T003 = DateTime.fromMillisecondsSinceEpoch(data['T003'] ?? 0);
+    // obj.T004 = DateTime.fromMillisecondsSinceEpoch(data['T004'] ?? 0);
+    // obj.T005 = DateTime.fromMillisecondsSinceEpoch(data['T005'] ?? 0);
+    // obj.T006 = DateTime.fromMillisecondsSinceEpoch(data['T006'] ?? 0);
+    // obj.T007 = DateTime.fromMillisecondsSinceEpoch(data['T007'] ?? 0);
+    // obj.T008 = DateTime.fromMillisecondsSinceEpoch(data['T008'] ?? 0);
+    // obj.T009 = DateTime.fromMillisecondsSinceEpoch(data['T009'] ?? 0);
+    // obj.T010 = DateTime.fromMillisecondsSinceEpoch(data['T010'] ?? 0);
+    // obj.T011 = DateTime.fromMillisecondsSinceEpoch(data['T011'] ?? 0);
+    // obj.T012 = DateTime.fromMillisecondsSinceEpoch(data['T012'] ?? 0);
+    // obj.T013 = DateTime.fromMillisecondsSinceEpoch(data['T013'] ?? 0);
+    // obj.T014 = DateTime.fromMillisecondsSinceEpoch(data['T014'] ?? 0);
+    // obj.T015 = DateTime.fromMillisecondsSinceEpoch(data['T015'] ?? 0);
+    // obj.T016 = DateTime.fromMillisecondsSinceEpoch(data['T016'] ?? 0);
+    // obj.T017 = DateTime.fromMillisecondsSinceEpoch(data['T017'] ?? 0);
+    // obj.T018 = DateTime.fromMillisecondsSinceEpoch(data['T018'] ?? 0);
+    // obj.T019 = DateTime.fromMillisecondsSinceEpoch(data['T019'] ?? 0);
+    // obj.T020 = DateTime.fromMillisecondsSinceEpoch(data['T020'] ?? 0);
     // obj.L000 = List<String>.from(data['L000'] ?? []);
     // obj.L001 = List<String>.from(data['L001'] ?? []);
     // obj.L002 = List<String>.from(data['L002'] ?? []);
@@ -1344,6 +1406,27 @@ var paramListNewModel = [
   // ["R028", "real", "0"],
   // ["R029", "real", "0"],
   // ["R030", "real", "0"],
+  // ["T000", "timestamp", "0"],
+  // ["T001", "timestamp", "0"],
+  // ["T002", "timestamp", "0"],
+  // ["T003", "timestamp", "0"],
+  // ["T004", "timestamp", "0"],
+  // ["T005", "timestamp", "0"],
+  // ["T006", "timestamp", "0"],
+  // ["T007", "timestamp", "0"],
+  // ["T008", "timestamp", "0"],
+  // ["T009", "timestamp", "0"],
+  // ["T010", "timestamp", "0"],
+  // ["T011", "timestamp", "0"],
+  // ["T012", "timestamp", "0"],
+  // ["T013", "timestamp", "0"],
+  // ["T014", "timestamp", "0"],
+  // ["T015", "timestamp", "0"],
+  // ["T016", "timestamp", "0"],
+  // ["T017", "timestamp", "0"],
+  // ["T018", "timestamp", "0"],
+  // ["T019", "timestamp", "0"],
+  // ["T020", "timestamp", "0"],
   // ["L000", "list", "'[]'"],
   // ["L001", "list", "'[]'"],
   // ["L002", "list", "'[]'"],

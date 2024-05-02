@@ -387,6 +387,27 @@ class NewModelSqflite {
     // map["R028"] = object.R028;
     // map["R029"] = object.R029;
     // map["R030"] = object.R030;
+    // map["T000"] = object.T000.millisecondsSinceEpoch;
+    // map["T001"] = object.T001.millisecondsSinceEpoch;
+    // map["T002"] = object.T002.millisecondsSinceEpoch;
+    // map["T003"] = object.T003.millisecondsSinceEpoch;
+    // map["T004"] = object.T004.millisecondsSinceEpoch;
+    // map["T005"] = object.T005.millisecondsSinceEpoch;
+    // map["T006"] = object.T006.millisecondsSinceEpoch;
+    // map["T007"] = object.T007.millisecondsSinceEpoch;
+    // map["T008"] = object.T008.millisecondsSinceEpoch;
+    // map["T009"] = object.T009.millisecondsSinceEpoch;
+    // map["T010"] = object.T010.millisecondsSinceEpoch;
+    // map["T011"] = object.T011.millisecondsSinceEpoch;
+    // map["T012"] = object.T012.millisecondsSinceEpoch;
+    // map["T013"] = object.T013.millisecondsSinceEpoch;
+    // map["T014"] = object.T014.millisecondsSinceEpoch;
+    // map["T015"] = object.T015.millisecondsSinceEpoch;
+    // map["T016"] = object.T016.millisecondsSinceEpoch;
+    // map["T017"] = object.T017.millisecondsSinceEpoch;
+    // map["T018"] = object.T018.millisecondsSinceEpoch;
+    // map["T019"] = object.T019.millisecondsSinceEpoch;
+    // map["T020"] = object.T020.millisecondsSinceEpoch;
     // map["L000"] = jsonEncode(object.L000);
     // map["L001"] = jsonEncode(object.L001);
     // map["L002"] = jsonEncode(object.L002);
@@ -747,6 +768,27 @@ class NewModelSqflite {
     // object.R028 = map["R028"] ?? 0;
     // object.R029 = map["R029"] ?? 0;
     // object.R030 = map["R030"] ?? 0;
+    // object.T000 = DateTime.fromMillisecondsSinceEpoch(map["T000"] ?? 0);
+    // object.T001 = DateTime.fromMillisecondsSinceEpoch(map["T001"] ?? 0);
+    // object.T002 = DateTime.fromMillisecondsSinceEpoch(map["T002"] ?? 0);
+    // object.T003 = DateTime.fromMillisecondsSinceEpoch(map["T003"] ?? 0);
+    // object.T004 = DateTime.fromMillisecondsSinceEpoch(map["T004"] ?? 0);
+    // object.T005 = DateTime.fromMillisecondsSinceEpoch(map["T005"] ?? 0);
+    // object.T006 = DateTime.fromMillisecondsSinceEpoch(map["T006"] ?? 0);
+    // object.T007 = DateTime.fromMillisecondsSinceEpoch(map["T007"] ?? 0);
+    // object.T008 = DateTime.fromMillisecondsSinceEpoch(map["T008"] ?? 0);
+    // object.T009 = DateTime.fromMillisecondsSinceEpoch(map["T009"] ?? 0);
+    // object.T010 = DateTime.fromMillisecondsSinceEpoch(map["T010"] ?? 0);
+    // object.T011 = DateTime.fromMillisecondsSinceEpoch(map["T011"] ?? 0);
+    // object.T012 = DateTime.fromMillisecondsSinceEpoch(map["T012"] ?? 0);
+    // object.T013 = DateTime.fromMillisecondsSinceEpoch(map["T013"] ?? 0);
+    // object.T014 = DateTime.fromMillisecondsSinceEpoch(map["T014"] ?? 0);
+    // object.T015 = DateTime.fromMillisecondsSinceEpoch(map["T015"] ?? 0);
+    // object.T016 = DateTime.fromMillisecondsSinceEpoch(map["T016"] ?? 0);
+    // object.T017 = DateTime.fromMillisecondsSinceEpoch(map["T017"] ?? 0);
+    // object.T018 = DateTime.fromMillisecondsSinceEpoch(map["T018"] ?? 0);
+    // object.T019 = DateTime.fromMillisecondsSinceEpoch(map["T019"] ?? 0);
+    // object.T020 = DateTime.fromMillisecondsSinceEpoch(map["T020"] ?? 0);
     // object.L000 = jsonDecode(map["L000"] ?? "[]");
     // object.L001 = jsonDecode(map["L001"] ?? "[]");
     // object.L002 = jsonDecode(map["L002"] ?? "[]");
@@ -1124,6 +1166,27 @@ class NewModelSqflite {
           // ",R028 real not null"
           // ",R029 real not null"
           // ",R030 real not null"
+          // ",T000 integer not null"
+          // ",T001 integer not null"
+          // ",T002 integer not null"
+          // ",T003 integer not null"
+          // ",T004 integer not null"
+          // ",T005 integer not null"
+          // ",T006 integer not null"
+          // ",T007 integer not null"
+          // ",T008 integer not null"
+          // ",T009 integer not null"
+          // ",T010 integer not null"
+          // ",T011 integer not null"
+          // ",T012 integer not null"
+          // ",T013 integer not null"
+          // ",T014 integer not null"
+          // ",T015 integer not null"
+          // ",T016 integer not null"
+          // ",T017 integer not null"
+          // ",T018 integer not null"
+          // ",T019 integer not null"
+          // ",T020 integer not null"
           // ",L000 text not null"
           // ",C000 text not null"
           // ",C001 text not null"

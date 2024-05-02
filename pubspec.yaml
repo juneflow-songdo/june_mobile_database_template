@@ -3,7 +3,7 @@ description: "create a mobile database model template for juneflow."
 #publish_to: 'none'
 repository: https://github.com/juneflow-songdo/june_mobile_database_template
 
-version: 1.0.5
+version: 1.0.6
 
 environment:
   sdk: '>=3.3.1 <4.0.0'

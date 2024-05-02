@@ -1,6 +1,8 @@
+
 import 'dart:convert';
 
-class NewSubModel {
+class NewModel {
+
   int I000 = 0;
 
   // int I001 = 0;
@@ -267,28 +269,48 @@ class NewSubModel {
   // num R028 = 0;
   // num R029 = 0;
   // num R030 = 0;
-  //
-  // List<String> L000 = [];
-  // List<String> L001 = [];
-  // List<String> L002 = [];
-  // List<String> L003 = [];
-  // List<String> L004 = [];
-  // List<String> L005 = [];
-  // List<String> L006 = [];
-  // List<String> L007 = [];
-  // List<String> L008 = [];
-  // List<String> L009 = [];
-  // List<String> L010 = [];
-  // List<String> L011 = [];
-  // List<String> L012 = [];
-  // List<String> L013 = [];
-  // List<String> L014 = [];
-  // List<String> L015 = [];
-  // List<String> L016 = [];
-  // List<String> L017 = [];
-  // List<String> L018 = [];
-  // List<String> L019 = [];
-  // List<String> L020 = [];
+  // DateTime T000 = DateTime.now();
+  // DateTime T001 = DateTime.now();
+  // DateTime T002 = DateTime.now();
+  // DateTime T003 = DateTime.now();
+  // DateTime T004 = DateTime.now();
+  // DateTime T005 = DateTime.now();
+  // DateTime T006 = DateTime.now();
+  // DateTime T007 = DateTime.now();
+  // DateTime T008 = DateTime.now();
+  // DateTime T009 = DateTime.now();
+  // DateTime T010 = DateTime.now();
+  // DateTime T011 = DateTime.now();
+  // DateTime T012 = DateTime.now();
+  // DateTime T013 = DateTime.now();
+  // DateTime T014 = DateTime.now();
+  // DateTime T015 = DateTime.now();
+  // DateTime T016 = DateTime.now();
+  // DateTime T017 = DateTime.now();
+  // DateTime T018 = DateTime.now();
+  // DateTime T019 = DateTime.now();
+  // DateTime T020 = DateTime.now();
+  // List<dynamic> L000 = [];
+  // List<dynamic> L001 = [];
+  // List<dynamic> L002 = [];
+  // List<dynamic> L003 = [];
+  // List<dynamic> L004 = [];
+  // List<dynamic> L005 = [];
+  // List<dynamic> L006 = [];
+  // List<dynamic> L007 = [];
+  // List<dynamic> L008 = [];
+  // List<dynamic> L009 = [];
+  // List<dynamic> L010 = [];
+  // List<dynamic> L011 = [];
+  // List<dynamic> L012 = [];
+  // List<dynamic> L013 = [];
+  // List<dynamic> L014 = [];
+  // List<dynamic> L015 = [];
+  // List<dynamic> L016 = [];
+  // List<dynamic> L017 = [];
+  // List<dynamic> L018 = [];
+  // List<dynamic> L019 = [];
+  // List<dynamic> L020 = [];
 
   // NewSub2Model C000 = NewSub2Model();
   // NewSub2Model C001 = NewSub2Model();
@@ -311,7 +333,7 @@ class NewSubModel {
   // NewSub2Model C018 = NewSub2Model();
   // NewSub2Model C019 = NewSub2Model();
   // NewSub2Model C020 = NewSub2Model();
-
+  //
   // List<NewSub2Model> J000 = [];
   // List<NewSub2Model> J001 = [];
   // List<NewSub2Model> J002 = [];
@@ -621,6 +643,27 @@ class NewSubModel {
       // 'R028': R028,
       // 'R029': R029,
       // 'R030': R030,
+      // 'T000': T000.millisecondsSinceEpoch,
+      // 'T001': T001.millisecondsSinceEpoch,
+      // 'T002': T002.millisecondsSinceEpoch,
+      // 'T003': T003.millisecondsSinceEpoch,
+      // 'T004': T004.millisecondsSinceEpoch,
+      // 'T005': T005.millisecondsSinceEpoch,
+      // 'T006': T006.millisecondsSinceEpoch,
+      // 'T007': T007.millisecondsSinceEpoch,
+      // 'T008': T008.millisecondsSinceEpoch,
+      // 'T009': T009.millisecondsSinceEpoch,
+      // 'T010': T010.millisecondsSinceEpoch,
+      // 'T011': T011.millisecondsSinceEpoch,
+      // 'T012': T012.millisecondsSinceEpoch,
+      // 'T013': T013.millisecondsSinceEpoch,
+      // 'T014': T014.millisecondsSinceEpoch,
+      // 'T015': T015.millisecondsSinceEpoch,
+      // 'T016': T016.millisecondsSinceEpoch,
+      // 'T017': T017.millisecondsSinceEpoch,
+      // 'T018': T018.millisecondsSinceEpoch,
+      // 'T019': T019.millisecondsSinceEpoch,
+      // 'T020': T020.millisecondsSinceEpoch,
       // 'L000': L000,
       // 'L001': L001,
       // 'L002': L002,
@@ -663,7 +706,6 @@ class NewSubModel {
       // 'C018': C018.toString(),
       // 'C019': C019.toString(),
       // 'C020': C020.toString(),
-
       // 'J000': jsonEncode(J000.map((model) => model.toString()).toList()),
       // 'J001': jsonEncode(J001.map((model) => model.toString()).toList()),
       // 'J002': jsonEncode(J002.map((model) => model.toString()).toList()),
@@ -711,9 +753,9 @@ class NewSubModel {
   }
 
   // JSON 문자열을 이용하여 Person 객체를 생성
-  static NewSubModel fromString(String jsonString) {
+  static NewModel fromString(String jsonString) {
     final data = jsonDecode(jsonString);
-    var obj = NewSubModel();
+    var obj = NewModel();
 
     obj.I000 = data['I000'] ?? 0;
     // obj.I001 = data['I001'] ?? 0;
@@ -977,6 +1019,27 @@ class NewSubModel {
     // obj.R028 = data['R028'] ?? 0;
     // obj.R029 = data['R029'] ?? 0;
     // obj.R030 = data['R030'] ?? 0;
+    // obj.T000 = DateTime.fromMillisecondsSinceEpoch(data['T000'] ?? 0);
+    // obj.T001 = DateTime.fromMillisecondsSinceEpoch(data['T001'] ?? 0);
+    // obj.T002 = DateTime.fromMillisecondsSinceEpoch(data['T002'] ?? 0);
+    // obj.T003 = DateTime.fromMillisecondsSinceEpoch(data['T003'] ?? 0);
+    // obj.T004 = DateTime.fromMillisecondsSinceEpoch(data['T004'] ?? 0);
+    // obj.T005 = DateTime.fromMillisecondsSinceEpoch(data['T005'] ?? 0);
+    // obj.T006 = DateTime.fromMillisecondsSinceEpoch(data['T006'] ?? 0);
+    // obj.T007 = DateTime.fromMillisecondsSinceEpoch(data['T007'] ?? 0);
+    // obj.T008 = DateTime.fromMillisecondsSinceEpoch(data['T008'] ?? 0);
+    // obj.T009 = DateTime.fromMillisecondsSinceEpoch(data['T009'] ?? 0);
+    // obj.T010 = DateTime.fromMillisecondsSinceEpoch(data['T010'] ?? 0);
+    // obj.T011 = DateTime.fromMillisecondsSinceEpoch(data['T011'] ?? 0);
+    // obj.T012 = DateTime.fromMillisecondsSinceEpoch(data['T012'] ?? 0);
+    // obj.T013 = DateTime.fromMillisecondsSinceEpoch(data['T013'] ?? 0);
+    // obj.T014 = DateTime.fromMillisecondsSinceEpoch(data['T014'] ?? 0);
+    // obj.T015 = DateTime.fromMillisecondsSinceEpoch(data['T015'] ?? 0);
+    // obj.T016 = DateTime.fromMillisecondsSinceEpoch(data['T016'] ?? 0);
+    // obj.T017 = DateTime.fromMillisecondsSinceEpoch(data['T017'] ?? 0);
+    // obj.T018 = DateTime.fromMillisecondsSinceEpoch(data['T018'] ?? 0);
+    // obj.T019 = DateTime.fromMillisecondsSinceEpoch(data['T019'] ?? 0);
+    // obj.T020 = DateTime.fromMillisecondsSinceEpoch(data['T020'] ?? 0);
     // obj.L000 = List<String>.from(data['L000'] ?? []);
     // obj.L001 = List<String>.from(data['L001'] ?? []);
     // obj.L002 = List<String>.from(data['L002'] ?? []);
@@ -1068,3 +1131,373 @@ class NewSubModel {
     return obj;
   }
 }
+
+var paramListNewModel = [
+  ["I000", "integer", "0"],
+  // ["I001", "integer", "0"],
+  // ["I002", "integer", "0"],
+  // ["I003", "integer", "0"],
+  // ["I004", "integer", "0"],
+  // ["I005", "integer", "0"],
+  // ["I006", "integer", "0"],
+  // ["I007", "integer", "0"],
+  // ["I008", "integer", "0"],
+  // ["I009", "integer", "0"],
+  // ["I010", "integer", "0"],
+  // ["I011", "integer", "0"],
+  // ["I012", "integer", "0"],
+  // ["I013", "integer", "0"],
+  // ["I014", "integer", "0"],
+  // ["I015", "integer", "0"],
+  // ["I016", "integer", "0"],
+  // ["I017", "integer", "0"],
+  // ["I018", "integer", "0"],
+  // ["I019", "integer", "0"],
+  // ["I020", "integer", "0"],
+  // ["I021", "integer", "0"],
+  // ["I022", "integer", "0"],
+  // ["I023", "integer", "0"],
+  // ["I024", "integer", "0"],
+  // ["I025", "integer", "0"],
+  // ["I026", "integer", "0"],
+  // ["I027", "integer", "0"],
+  // ["I028", "integer", "0"],
+  // ["I029", "integer", "0"],
+  // ["I030", "integer", "0"],
+  // ["I031", "integer", "0"],
+  // ["I032", "integer", "0"],
+  // ["I033", "integer", "0"],
+  // ["I034", "integer", "0"],
+  // ["I035", "integer", "0"],
+  // ["I036", "integer", "0"],
+  // ["I037", "integer", "0"],
+  // ["I038", "integer", "0"],
+  // ["I039", "integer", "0"],
+  // ["I040", "integer", "0"],
+  // ["I041", "integer", "0"],
+  // ["I042", "integer", "0"],
+  // ["I043", "integer", "0"],
+  // ["I044", "integer", "0"],
+  // ["I045", "integer", "0"],
+  // ["I046", "integer", "0"],
+  // ["I047", "integer", "0"],
+  // ["I048", "integer", "0"],
+  // ["I049", "integer", "0"],
+  // ["I050", "integer", "0"],
+  // ["I051", "integer", "0"],
+  // ["I052", "integer", "0"],
+  // ["I053", "integer", "0"],
+  // ["I054", "integer", "0"],
+  // ["I055", "integer", "0"],
+  // ["I056", "integer", "0"],
+  // ["I057", "integer", "0"],
+  // ["I058", "integer", "0"],
+  // ["I059", "integer", "0"],
+  // ["I060", "integer", "0"],
+  // ["I061", "integer", "0"],
+  // ["I062", "integer", "0"],
+  // ["I063", "integer", "0"],
+  // ["I064", "integer", "0"],
+  // ["I065", "integer", "0"],
+  // ["I066", "integer", "0"],
+  // ["I067", "integer", "0"],
+  // ["I068", "integer", "0"],
+  // ["I069", "integer", "0"],
+  // ["I070", "integer", "0"],
+  // ["I071", "integer", "0"],
+  // ["I072", "integer", "0"],
+  // ["I073", "integer", "0"],
+  // ["I074", "integer", "0"],
+  // ["I075", "integer", "0"],
+  // ["I076", "integer", "0"],
+  // ["I077", "integer", "0"],
+  // ["I078", "integer", "0"],
+  // ["I079", "integer", "0"],
+  // ["I080", "integer", "0"],
+  // ["I081", "integer", "0"],
+  // ["I082", "integer", "0"],
+  // ["I083", "integer", "0"],
+  // ["I084", "integer", "0"],
+  // ["I085", "integer", "0"],
+  // ["I086", "integer", "0"],
+  // ["I087", "integer", "0"],
+  // ["I088", "integer", "0"],
+  // ["I089", "integer", "0"],
+  // ["I090", "integer", "0"],
+  // ["I091", "integer", "0"],
+  // ["I092", "integer", "0"],
+  // ["I093", "integer", "0"],
+  // ["I094", "integer", "0"],
+  // ["I095", "integer", "0"],
+  // ["I096", "integer", "0"],
+  // ["I097", "integer", "0"],
+  // ["I098", "integer", "0"],
+  // ["I099", "integer", "0"],
+  // ["S000", "string", "''"],
+  // ["S001", "string", "''"],
+  // ["S002", "string", "''"],
+  // ["S003", "string", "''"],
+  // ["S004", "string", "''"],
+  // ["S005", "string", "''"],
+  // ["S006", "string", "''"],
+  // ["S007", "string", "''"],
+  // ["S008", "string", "''"],
+  // ["S009", "string", "''"],
+  // ["S010", "string", "''"],
+  // ["S011", "string", "''"],
+  // ["S012", "string", "''"],
+  // ["S013", "string", "''"],
+  // ["S014", "string", "''"],
+  // ["S015", "string", "''"],
+  // ["S016", "string", "''"],
+  // ["S017", "string", "''"],
+  // ["S018", "string", "''"],
+  // ["S019", "string", "''"],
+  // ["S020", "string", "''"],
+  // ["S021", "string", "''"],
+  // ["S022", "string", "''"],
+  // ["S023", "string", "''"],
+  // ["S024", "string", "''"],
+  // ["S025", "string", "''"],
+  // ["S026", "string", "''"],
+  // ["S027", "string", "''"],
+  // ["S028", "string", "''"],
+  // ["S029", "string", "''"],
+  // ["S030", "string", "''"],
+  // ["S031", "string", "''"],
+  // ["S032", "string", "''"],
+  // ["S033", "string", "''"],
+  // ["S034", "string", "''"],
+  // ["S035", "string", "''"],
+  // ["S036", "string", "''"],
+  // ["S037", "string", "''"],
+  // ["S038", "string", "''"],
+  // ["S039", "string", "''"],
+  // ["S040", "string", "''"],
+  // ["S041", "string", "''"],
+  // ["S042", "string", "''"],
+  // ["S043", "string", "''"],
+  // ["S044", "string", "''"],
+  // ["S045", "string", "''"],
+  // ["S046", "string", "''"],
+  // ["S047", "string", "''"],
+  // ["S048", "string", "''"],
+  // ["S049", "string", "''"],
+  // ["S050", "string", "''"],
+  // ["S051", "string", "''"],
+  // ["S052", "string", "''"],
+  // ["S053", "string", "''"],
+  // ["S054", "string", "''"],
+  // ["S055", "string", "''"],
+  // ["S056", "string", "''"],
+  // ["S057", "string", "''"],
+  // ["S058", "string", "''"],
+  // ["S059", "string", "''"],
+  // ["S060", "string", "''"],
+  // ["S061", "string", "''"],
+  // ["S062", "string", "''"],
+  // ["S063", "string", "''"],
+  // ["S064", "string", "''"],
+  // ["S065", "string", "''"],
+  // ["S066", "string", "''"],
+  // ["S067", "string", "''"],
+  // ["S068", "string", "''"],
+  // ["S069", "string", "''"],
+  // ["S070", "string", "''"],
+  // ["S071", "string", "''"],
+  // ["S072", "string", "''"],
+  // ["S073", "string", "''"],
+  // ["S074", "string", "''"],
+  // ["S075", "string", "''"],
+  // ["S076", "string", "''"],
+  // ["S077", "string", "''"],
+  // ["S078", "string", "''"],
+  // ["S079", "string", "''"],
+  // ["S080", "string", "''"],
+  // ["S081", "string", "''"],
+  // ["S082", "string", "''"],
+  // ["S083", "string", "''"],
+  // ["S084", "string", "''"],
+  // ["S085", "string", "''"],
+  // ["S086", "string", "''"],
+  // ["S087", "string", "''"],
+  // ["S088", "string", "''"],
+  // ["S089", "string", "''"],
+  // ["S090", "string", "''"],
+  // ["S091", "string", "''"],
+  // ["S092", "string", "''"],
+  // ["S093", "string", "''"],
+  // ["S094", "string", "''"],
+  // ["S095", "string", "''"],
+  // ["S096", "string", "''"],
+  // ["S097", "string", "''"],
+  // ["S098", "string", "''"],
+  // ["S099", "string", "''"],
+  // ["B000", "boolean", "0"],
+  // ["B001", "boolean", "0"],
+  // ["B002", "boolean", "0"],
+  // ["B003", "boolean", "0"],
+  // ["B004", "boolean", "0"],
+  // ["B005", "boolean", "0"],
+  // ["B006", "boolean", "0"],
+  // ["B007", "boolean", "0"],
+  // ["B008", "boolean", "0"],
+  // ["B009", "boolean", "0"],
+  // ["B010", "boolean", "0"],
+  // ["B011", "boolean", "0"],
+  // ["B012", "boolean", "0"],
+  // ["B013", "boolean", "0"],
+  // ["B014", "boolean", "0"],
+  // ["B015", "boolean", "0"],
+  // ["B016", "boolean", "0"],
+  // ["B017", "boolean", "0"],
+  // ["B018", "boolean", "0"],
+  // ["B019", "boolean", "0"],
+  // ["B020", "boolean", "0"],
+  // ["B021", "boolean", "0"],
+  // ["B022", "boolean", "0"],
+  // ["B023", "boolean", "0"],
+  // ["B024", "boolean", "0"],
+  // ["B025", "boolean", "0"],
+  // ["B026", "boolean", "0"],
+  // ["B027", "boolean", "0"],
+  // ["B028", "boolean", "0"],
+  // ["B029", "boolean", "0"],
+  // ["B030", "boolean", "0"],
+  // ["R000", "real", "0"],
+  // ["R001", "real", "0"],
+  // ["R002", "real", "0"],
+  // ["R003", "real", "0"],
+  // ["R004", "real", "0"],
+  // ["R005", "real", "0"],
+  // ["R006", "real", "0"],
+  // ["R007", "real", "0"],
+  // ["R008", "real", "0"],
+  // ["R009", "real", "0"],
+  // ["R010", "real", "0"],
+  // ["R011", "real", "0"],
+  // ["R012", "real", "0"],
+  // ["R013", "real", "0"],
+  // ["R014", "real", "0"],
+  // ["R015", "real", "0"],
+  // ["R016", "real", "0"],
+  // ["R017", "real", "0"],
+  // ["R018", "real", "0"],
+  // ["R019", "real", "0"],
+  // ["R020", "real", "0"],
+  // ["R021", "real", "0"],
+  // ["R022", "real", "0"],
+  // ["R023", "real", "0"],
+  // ["R024", "real", "0"],
+  // ["R025", "real", "0"],
+  // ["R026", "real", "0"],
+  // ["R027", "real", "0"],
+  // ["R028", "real", "0"],
+  // ["R029", "real", "0"],
+  // ["R030", "real", "0"],
+  // ["T000", "timestamp", "0"],
+  // ["T001", "timestamp", "0"],
+  // ["T002", "timestamp", "0"],
+  // ["T003", "timestamp", "0"],
+  // ["T004", "timestamp", "0"],
+  // ["T005", "timestamp", "0"],
+  // ["T006", "timestamp", "0"],
+  // ["T007", "timestamp", "0"],
+  // ["T008", "timestamp", "0"],
+  // ["T009", "timestamp", "0"],
+  // ["T010", "timestamp", "0"],
+  // ["T011", "timestamp", "0"],
+  // ["T012", "timestamp", "0"],
+  // ["T013", "timestamp", "0"],
+  // ["T014", "timestamp", "0"],
+  // ["T015", "timestamp", "0"],
+  // ["T016", "timestamp", "0"],
+  // ["T017", "timestamp", "0"],
+  // ["T018", "timestamp", "0"],
+  // ["T019", "timestamp", "0"],
+  // ["T020", "timestamp", "0"],
+  // ["L000", "list", "'[]'"],
+  // ["L001", "list", "'[]'"],
+  // ["L002", "list", "'[]'"],
+  // ["L003", "list", "'[]'"],
+  // ["L004", "list", "'[]'"],
+  // ["L005", "list", "'[]'"],
+  // ["L006", "list", "'[]'"],
+  // ["L007", "list", "'[]'"],
+  // ["L008", "list", "'[]'"],
+  // ["L009", "list", "'[]'"],
+  // ["L010", "list", "'[]'"],
+  // ["L011", "list", "'[]'"],
+  // ["L012", "list", "'[]'"],
+  // ["L013", "list", "'[]'"],
+  // ["L014", "list", "'[]'"],
+  // ["L015", "list", "'[]'"],
+  // ["L016", "list", "'[]'"],
+  // ["L017", "list", "'[]'"],
+  // ["L018", "list", "'[]'"],
+  // ["L019", "list", "'[]'"],
+  // ["L020", "list", "'[]'"],
+  // ["C000", "class","'${(NewSub2Model().toString())}'"],
+  // ["C001", "class","'${(NewSub2Model().toString())}'"],
+  // ["C002", "class","'${(NewSub2Model().toString())}'"],
+  // ["C003", "class","'${(NewSub2Model().toString())}'"],
+  // ["C004", "class","'${(NewSub2Model().toString())}'"],
+  // ["C005", "class","'${(NewSub2Model().toString())}'"],
+  // ["C006", "class","'${(NewSub2Model().toString())}'"],
+  // ["C007", "class","'${(NewSub2Model().toString())}'"],
+  // ["C008", "class","'${(NewSub2Model().toString())}'"],
+  // ["C009", "class","'${(NewSub2Model().toString())}'"],
+  // ["C010", "class","'${(NewSub2Model().toString())}'"],
+  // ["C011", "class","'${(NewSub2Model().toString())}'"],
+  // ["C012", "class","'${(NewSub2Model().toString())}'"],
+  // ["C013", "class","'${(NewSub2Model().toString())}'"],
+  // ["C014", "class","'${(NewSub2Model().toString())}'"],
+  // ["C015", "class","'${(NewSub2Model().toString())}'"],
+  // ["C016", "class","'${(NewSub2Model().toString())}'"],
+  // ["C017", "class","'${(NewSub2Model().toString())}'"],
+  // ["C018", "class","'${(NewSub2Model().toString())}'"],
+  // ["C019", "class","'${(NewSub2Model().toString())}'"],
+  // ["C020", "class","'${(NewSub2Model().toString())}'"],
+  // ["J000", "classes","'[]'"],
+  // ["J001", "classes","'[]'"],
+  // ["J002", "classes","'[]'"],
+  // ["J003", "classes","'[]'"],
+  // ["J004", "classes","'[]'"],
+  // ["J005", "classes","'[]'"],
+  // ["J006", "classes","'[]'"],
+  // ["J007", "classes","'[]'"],
+  // ["J008", "classes","'[]'"],
+  // ["J009", "classes","'[]'"],
+  // ["J010", "classes","'[]'"],
+  // ["J011", "classes","'[]'"],
+  // ["J012", "classes","'[]'"],
+  // ["J013", "classes","'[]'"],
+  // ["J014", "classes","'[]'"],
+  // ["J015", "classes","'[]'"],
+  // ["J016", "classes","'[]'"],
+  // ["J017", "classes","'[]'"],
+  // ["J018", "classes","'[]'"],
+  // ["J019", "classes","'[]'"],
+  // ["J020", "classes","'[]'"],
+  // ["E000", "enum","'NotSelected'"],
+  // ["E001", "enum","'NotSelected'"],
+  // ["E002", "enum","'NotSelected'"],
+  // ["E003", "enum","'NotSelected'"],
+  // ["E004", "enum","'NotSelected'"],
+  // ["E005", "enum","'NotSelected'"],
+  // ["E006", "enum","'NotSelected'"],
+  // ["E007", "enum","'NotSelected'"],
+  // ["E008", "enum","'NotSelected'"],
+  // ["E009", "enum","'NotSelected'"],
+  // ["E010", "enum","'NotSelected'"],
+  // ["E011", "enum","'NotSelected'"],
+  // ["E012", "enum","'NotSelected'"],
+  // ["E013", "enum","'NotSelected'"],
+  // ["E014", "enum","'NotSelected'"],
+  // ["E015", "enum","'NotSelected'"],
+  // ["E016", "enum","'NotSelected'"],
+  // ["E017", "enum","'NotSelected'"],
+  // ["E018", "enum","'NotSelected'"],
+  // ["E019", "enum","'NotSelected'"],
+  // ["E020", "enum","'NotSelected'"],
+];
