@@ -9,19 +9,19 @@ class NewModelFlutterSecureStorage {
   Future<NewModel?> get() async {
     await _ready();
 
-    String? json = await storage.read(key: 'NewModel');
+    String? data = await storage.read(key: 'NewModel');
 
-    if (json == null) return NewModel();
+    if (data == null) return NewModel();
 
-    return NewModel.fromString(json);
+    return NewModel.fromDataString(data);
   }
 
   Future<void> upsert(NewModel obj) async {
     await _ready();
 
-    String json = obj.toString();
+    String data = obj.toDataString();
 
-    await storage.write(key: obj.DocId, value: json);
+    await storage.write(key: obj.docId, value: data);
   }
 
   Future<void> delete() async {

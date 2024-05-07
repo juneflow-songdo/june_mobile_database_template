@@ -2,25 +2,25 @@ import 'dart:convert';
 
 import '../../../../../../../../../main.dart';
 
-class ManagingSqfliteTableNewModel {
-  SqfliteTableNewModel get() {
-    String? json = prefs.getString('ManagingSqfliteTableNewModel');
-    if (json == null) return SqfliteTableNewModel();
+class ManagingSqliteTableNewModel {
+  SqliteTableNewModel get() {
+    String? json = prefs.getString('ManagingSqliteTableNewModel');
+    if (json == null) return SqliteTableNewModel();
 
-    return SqfliteTableNewModel.fromString(json);
+    return SqliteTableNewModel.fromString(json);
   }
 
-  upsert(SqfliteTableNewModel obj) async {
+  upsert(SqliteTableNewModel obj) async {
     String json = obj.toString();
-    await prefs.setString('ManagingSqfliteTableNewModel', json);
+    await prefs.setString('ManagingSqliteTableNewModel', json);
   }
 
   delete() async {
-    await prefs.remove('ManagingSqfliteTableNewModel');
+    await prefs.remove('ManagingSqliteTableNewModel');
   }
 }
 
-class SqfliteTableNewModel {
+class SqliteTableNewModel {
   int UpdateMillis = 0;
 
   int Version = 1;
@@ -38,9 +38,9 @@ class SqfliteTableNewModel {
   }
 
   // JSON 문자열을 이용하여 Person 객체를 생성
-  static SqfliteTableNewModel fromString(String jsonString) {
+  static SqliteTableNewModel fromString(String jsonString) {
     final data = jsonDecode(jsonString);
-    var obj = SqfliteTableNewModel();
+    var obj = SqliteTableNewModel();
 
     obj.UpdateMillis = data['UpdateMillis'] ?? 0;
     obj.Version = data['Version'] ?? 0;

@@ -7,19 +7,19 @@ class NewModelSharedPreferences {
   Future<NewModel?> get() async {
     await _ready();
 
-    String? json = prefs.getString('NewModel');
+    String? data = prefs.getString('NewModel');
 
-    if (json == null) return null;
+    if (data == null) return null;
 
-    return NewModel.fromString(json);
+    return NewModel.fromDataString(data);
   }
 
   Future<void> upsert(NewModel obj) async {
     await _ready();
 
-    String json = obj.toString();
+    String data = obj.toDataString();
 
-    await prefs.setString(obj.DocId, json);
+    await prefs.setString(obj.docId, data);
   }
 
   Future<void> delete() async {
