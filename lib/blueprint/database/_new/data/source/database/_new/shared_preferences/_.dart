@@ -4,12 +4,12 @@ import '../../../../../../../../main.dart';
 
 class NewModelSharedPreferences {
 
-  Future<NewModel?> get() async {
+  Future<NewModel> get() async {
     await _ready();
 
     String? data = prefs.getString('NewModel');
 
-    if (data == null) return null;
+    if (data == null) return NewModel();
 
     return NewModel.fromDataString(data);
   }

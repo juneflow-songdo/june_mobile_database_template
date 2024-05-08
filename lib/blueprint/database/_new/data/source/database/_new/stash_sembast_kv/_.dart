@@ -6,12 +6,12 @@ import '../../../../../../../../main.dart';
 import 'package:stash/stash_api.dart';
 
 class NewModelStashSembastKV {
-  Future<NewModel?> get() async {
+  Future<NewModel> get() async {
     await _ready();
 
-    String? data = await vault.get('NewModel');
+    String? data = await _vault.get('NewModel');
 
-    if (data == null) return null;
+    if (data == null) return NewModel();
 
     return NewModel.fromDataString(data);
   }
@@ -21,17 +21,17 @@ class NewModelStashSembastKV {
 
     String data = obj.toDataString();
 
-    await vault.put('NewModel', data);
+    await _vault.put('NewModel', data);
   }
 
   Future<void> delete() async {
     await _ready();
 
-    await vault.remove('NewModel');
+    await _vault.remove('NewModel');
   }
 
   //////////////////////////////////////
-  late Vault vault;
+  late Vault _vault;
 
   static bool _isOpened = false;
 
@@ -44,6 +44,6 @@ class NewModelStashSembastKV {
 
   _open() async {
     SembastVaultStore store = await newSembastLocalVaultStore(path: '${(await getApplicationDocumentsDirectory()).path}/stash_sembast_kv.sdb');
-    vault = await store.vault<String>(name: 'NewModel');
+    _vault = await store.vault<String>(name: 'NewModel');
   }
 }

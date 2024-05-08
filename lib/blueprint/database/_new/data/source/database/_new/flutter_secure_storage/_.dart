@@ -6,7 +6,7 @@ import '../../../../../../../../main.dart';
 
 class NewModelFlutterSecureStorage {
 
-  Future<NewModel?> get() async {
+  Future<NewModel> get() async {
     await _ready();
 
     String? data = await storage.read(key: 'NewModel');
