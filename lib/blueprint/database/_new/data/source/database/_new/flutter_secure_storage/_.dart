@@ -21,7 +21,7 @@ class NewModelFlutterSecureStorage {
 
     String data = obj.toDataString();
 
-    await storage.write(key: obj.docId, value: data);
+    await storage.write(key: 'NewModel', value: data);
   }
 
   Future<void> delete() async {

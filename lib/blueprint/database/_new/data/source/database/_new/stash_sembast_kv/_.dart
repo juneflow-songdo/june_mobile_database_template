@@ -1,13 +1,15 @@
+import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:stash_sembast/stash_sembast.dart';
 import '../../../../../domain/entity/model/_new/model.dart';
 import '../../../../../../../../main.dart';
+import 'package:stash/stash_api.dart';
 
-class NewModelSharedPreferences {
-
+class NewModelStashSembastKV {
   Future<NewModel?> get() async {
     await _ready();
 
-    String? data = prefs.getString('NewModel');
+    String? data = await vault.get('NewModel');
 
     if (data == null) return null;
 
@@ -19,19 +21,17 @@ class NewModelSharedPreferences {
 
     String data = obj.toDataString();
 
-    await prefs.setString('NewModel', data);
+    await vault.put('NewModel', data);
   }
 
   Future<void> delete() async {
     await _ready();
 
-    await prefs.remove('NewModel');
+    await vault.remove('NewModel');
   }
 
   //////////////////////////////////////
-
-
-  static late SharedPreferences prefs;
+  late Vault vault;
 
   static bool _isOpened = false;
 
@@ -43,6 +43,7 @@ class NewModelSharedPreferences {
   }
 
   _open() async {
-    prefs = await SharedPreferences.getInstance();
+    SembastVaultStore store = await newSembastLocalVaultStore(path: '${(await getApplicationDocumentsDirectory()).path}/stash_sembast_kv.sdb');
+    vault = await store.vault<String>(name: 'NewModel');
   }
 }
