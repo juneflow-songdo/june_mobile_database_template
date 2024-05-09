@@ -4,12 +4,12 @@ import '../../../../../../../../main.dart';
 
 class NewModelSharedPreferences {
 
-  Future<NewModel?> get() async {
+  Future<NewModel> get() async {
     await _ready();
 
     String? data = prefs.getString('NewModel');
 
-    if (data == null) return null;
+    if (data == null) return NewModel();
 
     return NewModel.fromDataString(data);
   }
@@ -19,7 +19,7 @@ class NewModelSharedPreferences {
 
     String data = obj.toDataString();
 
-    await prefs.setString(obj.docId, data);
+    await prefs.setString('NewModel', data);
   }
 
   Future<void> delete() async {
@@ -37,8 +37,8 @@ class NewModelSharedPreferences {
 
   _ready() async {
     if (!_isOpened) {
-      await _open();
       _isOpened = true;
+      await _open();
     }
   }
 

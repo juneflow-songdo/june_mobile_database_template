@@ -6,7 +6,7 @@ import '../../../../../../../../main.dart';
 
 class NewModelFlutterSecureStorage {
 
-  Future<NewModel?> get() async {
+  Future<NewModel> get() async {
     await _ready();
 
     String? data = await storage.read(key: 'NewModel');
@@ -21,7 +21,7 @@ class NewModelFlutterSecureStorage {
 
     String data = obj.toDataString();
 
-    await storage.write(key: obj.docId, value: data);
+    await storage.write(key: 'NewModel', value: data);
   }
 
   Future<void> delete() async {
@@ -38,8 +38,8 @@ class NewModelFlutterSecureStorage {
 
   _ready() async {
     if (!_isOpened) {
-      await _open();
       _isOpened = true;
+      await _open();
     }
   }
 
