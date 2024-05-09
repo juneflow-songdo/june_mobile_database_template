@@ -1276,7 +1276,7 @@ class NewModelSqlite {
   }
 
   _handleColumnChanged() async {
-    var _ = await ManagingSqliteTableNewModel().get();
+    var _ = ManagingSqliteTableNewModel().get();
 
     var columns = paramListNewModel.map((e) => e[0].toString()).toList();
     if (_.UpdateMillis == 0) {
@@ -1284,7 +1284,7 @@ class NewModelSqlite {
       _.Version = 1;
       _.UpdateMillis = DateTime.now().millisecondsSinceEpoch;
       _.Columns = columns;
-      await ManagingSqliteTableNewModel().upsert(_);
+      ManagingSqliteTableNewModel().upsert(_);
     }
 
     // 기존 컬럼과의 비교를 해줍니다. (없어진건 삭제하고 새로나온건 추가하는식으로 가자)
@@ -1301,7 +1301,7 @@ class NewModelSqlite {
       _.Version++;
       _.UpdateMillis = DateTime.now().millisecondsSinceEpoch;
       _.Columns = columns;
-      await ManagingSqliteTableNewModel().upsert(_);
+      ManagingSqliteTableNewModel().upsert(_);
     }
 
     // process to add columns
@@ -1362,17 +1362,17 @@ class NewModelSqlite {
     final path = join(databasePath, _dbName);
     await Directory(dirname(path)).create(recursive: true);
     NewModelDb = await openDatabase(path,
-        version: (await ManagingSqliteTableNewModel().get()).Version);
+        version: ManagingSqliteTableNewModel().get().Version);
     _isDbOpened = true;
   }
 
   /// sql index create
   createIndexing(Database myDatabase) async {
-    if (await Orange.getBool("NewModelSqliteIndex") != null) {
+    if (Orange.getBool("NewModelSqliteIndex") != null) {
       return;
     }
 
-    await Orange.setBool("NewModelSqliteIndex", true);
+    Orange.setBool("NewModelSqliteIndex", true);
 
     /// exapmle
     // await myDatabase.execute("create index i000index on NewModel (i000)"); // single index

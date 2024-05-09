@@ -5,20 +5,20 @@ import 'package:orange/orange.dart';
 import '../../../../../../../../../main.dart';
 
 class ManagingSqliteTableNewModel {
-  Future<SqliteTableNewModel> get() async {
-    String? json = await Orange.getString('ManagingSqliteTableNewModel');
+  SqliteTableNewModel get() {
+    String? json = Orange.getString('ManagingSqliteTableNewModel');
     if (json == null) return SqliteTableNewModel();
 
     return SqliteTableNewModel.fromString(json);
   }
 
-  upsert(SqliteTableNewModel obj) async {
+  upsert(SqliteTableNewModel obj){
     String json = obj.toString();
-    await Orange.setString('ManagingSqliteTableNewModel', json);
+    Orange.setString('ManagingSqliteTableNewModel', json);
   }
 
-  delete() async {
-    await Orange.remove('ManagingSqliteTableNewModel');
+  delete() {
+    Orange.remove('ManagingSqliteTableNewModel');
   }
 }
 
