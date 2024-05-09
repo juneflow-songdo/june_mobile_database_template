@@ -3,7 +3,7 @@ description: "create a mobile database model template for juneflow."
 #publish_to: 'none'
 repository: https://github.com/juneflow-songdo/june_mobile_database_template
 
-version: 1.1.0
+version: 1.2.0
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
@@ -29,6 +29,7 @@ dependencies:
   shared_preferences:
   path: #@add
   path_provider:
+  orange:
 
 dev_dependencies:
   bot_toast_module:
@@ -41,8 +42,8 @@ dev_dependencies:
   june_usecase_template: #@add
   june_view:
   june_view_more:
+  orange_module:
   screenutil_module:
-  shared_preferences_module: #@add
 
 flutter:
   assets:

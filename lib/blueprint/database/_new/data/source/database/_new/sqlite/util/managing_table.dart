@@ -1,10 +1,12 @@
 import 'dart:convert';
 
+import 'package:orange/orange.dart';
+
 import '../../../../../../../../../main.dart';
 
 class ManagingSqliteTableNewModel {
-  SqliteTableNewModel get() {
-    String? json = prefs.getString('ManagingSqliteTableNewModel');
+  Future<SqliteTableNewModel> get() async {
+    String? json = await Orange.getString('ManagingSqliteTableNewModel');
     if (json == null) return SqliteTableNewModel();
 
     return SqliteTableNewModel.fromString(json);
@@ -12,11 +14,11 @@ class ManagingSqliteTableNewModel {
 
   upsert(SqliteTableNewModel obj) async {
     String json = obj.toString();
-    await prefs.setString('ManagingSqliteTableNewModel', json);
+    await Orange.setString('ManagingSqliteTableNewModel', json);
   }
 
   delete() async {
-    await prefs.remove('ManagingSqliteTableNewModel');
+    await Orange.remove('ManagingSqliteTableNewModel');
   }
 }
 

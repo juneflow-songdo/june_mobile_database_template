@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:orange/orange.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -1274,7 +1275,7 @@ class NewModelSqlite {
   }
 
   _handleColumnChanged() async {
-    var _ = ManagingSqliteTableNewModel().get();
+    var _ = await ManagingSqliteTableNewModel().get();
 
     var columns = paramListNewModel.map((e) => e[0].toString()).toList();
     if (_.UpdateMillis == 0) {
@@ -1360,17 +1361,17 @@ class NewModelSqlite {
     final path = join(databasePath, _dbName);
     await Directory(dirname(path)).create(recursive: true);
     NewModelDb = await openDatabase(path,
-        version: ManagingSqliteTableNewModel().get().Version);
+        version: (await ManagingSqliteTableNewModel().get()).Version);
     _isDbOpened = true;
   }
 
   /// sql index create
   createIndexing(Database myDatabase) async {
-    if (prefs.getBool("NewModelSqliteIndex") != null) {
+    if (await Orange.getBool("NewModelSqliteIndex") != null) {
       return;
     }
 
-    await prefs.setBool("NewModelSqliteIndex", true);
+    await Orange.setBool("NewModelSqliteIndex", true);
 
     /// exapmle
     // await myDatabase.execute("create index i000index on NewModel (i000)"); // single index

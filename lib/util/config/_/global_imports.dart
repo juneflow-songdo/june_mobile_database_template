@@ -16,5 +16,3 @@ export 'package:gap/gap.dart';
 export 'package:flutter_svg/svg.dart';
 
 export 'package:flutter_screenutil/flutter_screenutil.dart';
-
-export '../../_/shared_params/shared_preferences_module/_.dart';
