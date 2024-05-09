@@ -1,8 +1,5 @@
-import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
-import '../../main.dart';
-
-String _noteName = "Note";
+import '../main.dart';
 
 T _button00 = T("00", onTap: (BuildContext context) async {
   ////////////////////////////////////////
@@ -607,7 +604,7 @@ T _button99 = T("99", onTap: (BuildContext context) async {
 main() async {
 
   MyAppHome = FunctionNoteKit(
-    title: _noteName,
+    title: 'Note',
     button00: _button00,
     button01: _button01,
     button02: _button02,

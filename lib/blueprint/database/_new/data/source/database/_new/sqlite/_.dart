@@ -887,8 +887,9 @@ class NewModelSqlite {
 
   _ready() async {
     if (!_isOpened) {
-      await _open();
       _isOpened = true;
+      await _open();
+
     }
   }
 

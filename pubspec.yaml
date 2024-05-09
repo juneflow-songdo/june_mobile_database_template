@@ -3,7 +3,7 @@ description: "create a mobile database model template for juneflow."
 #publish_to: 'none'
 repository: https://github.com/juneflow-songdo/june_mobile_database_template
 
-version: 1.1.0
+version: 1.1.1
 
 environment:
   sdk: '>=3.3.1 <4.0.0'
@@ -29,7 +29,6 @@ dependencies:
   shared_preferences:
   path: #@add
   path_provider: #@add
-  stash_sembast: #@add
 
 dev_dependencies:
   bot_toast_module:
