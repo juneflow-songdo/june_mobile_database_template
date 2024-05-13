@@ -687,48 +687,48 @@ class NewModel {
       // 'l018': json.encode(l018),
       // 'l019': json.encode(l019),
       // 'l020': json.encode(l020),
-      // 'c000': c000.toBase64QueryString(),
-      // 'c001': c001.toBase64QueryString(),
-      // 'c002': c002.toBase64QueryString(),
-      // 'c003': c003.toBase64QueryString(),
-      // 'c004': c004.toBase64QueryString(),
-      // 'c005': c005.toBase64QueryString(),
-      // 'c006': c006.toBase64QueryString(),
-      // 'c007': c007.toBase64QueryString(),
-      // 'c008': c008.toBase64QueryString(),
-      // 'c009': c009.toBase64QueryString(),
-      // 'c010': c010.toBase64QueryString(),
-      // 'c011': c011.toBase64QueryString(),
-      // 'c012': c012.toBase64QueryString(),
-      // 'c013': c013.toBase64QueryString(),
-      // 'c014': c014.toBase64QueryString(),
-      // 'c015': c015.toBase64QueryString(),
-      // 'c016': c016.toBase64QueryString(),
-      // 'c017': c017.toBase64QueryString(),
-      // 'c018': c018.toBase64QueryString(),
-      // 'c019': c019.toBase64QueryString(),
-      // 'c020': c020.toBase64QueryString(),
-      // 'j000': jsonEncode(j000.map((model) => model.toBase64QueryString()).toList()),
-      // 'j001': jsonEncode(j001.map((model) => model.toBase64QueryString()).toList()),
-      // 'j002': jsonEncode(j002.map((model) => model.toBase64QueryString()).toList()),
-      // 'j003': jsonEncode(j003.map((model) => model.toBase64QueryString()).toList()),
-      // 'j004': jsonEncode(j004.map((model) => model.toBase64QueryString()).toList()),
-      // 'j005': jsonEncode(j005.map((model) => model.toBase64QueryString()).toList()),
-      // 'j006': jsonEncode(j006.map((model) => model.toBase64QueryString()).toList()),
-      // 'j007': jsonEncode(j007.map((model) => model.toBase64QueryString()).toList()),
-      // 'j008': jsonEncode(j008.map((model) => model.toBase64QueryString()).toList()),
-      // 'j009': jsonEncode(j009.map((model) => model.toBase64QueryString()).toList()),
-      // 'j010': jsonEncode(j010.map((model) => model.toBase64QueryString()).toList()),
-      // 'j011': jsonEncode(j011.map((model) => model.toBase64QueryString()).toList()),
-      // 'j012': jsonEncode(j012.map((model) => model.toBase64QueryString()).toList()),
-      // 'j013': jsonEncode(j013.map((model) => model.toBase64QueryString()).toList()),
-      // 'j014': jsonEncode(j014.map((model) => model.toBase64QueryString()).toList()),
-      // 'j015': jsonEncode(j015.map((model) => model.toBase64QueryString()).toList()),
-      // 'j016': jsonEncode(j016.map((model) => model.toBase64QueryString()).toList()),
-      // 'j017': jsonEncode(j017.map((model) => model.toBase64QueryString()).toList()),
-      // 'j018': jsonEncode(j018.map((model) => model.toBase64QueryString()).toList()),
-      // 'j019': jsonEncode(j019.map((model) => model.toBase64QueryString()).toList()),
-      // 'j020': jsonEncode(j020.map((model) => model.toBase64QueryString()).toList()),
+      // 'c000': c000.toDataString((),
+      // 'c001': c001.toDataString((),
+      // 'c002': c002.toDataString((),
+      // 'c003': c003.toDataString((),
+      // 'c004': c004.toDataString((),
+      // 'c005': c005.toDataString((),
+      // 'c006': c006.toDataString((),
+      // 'c007': c007.toDataString((),
+      // 'c008': c008.toDataString((),
+      // 'c009': c009.toDataString((),
+      // 'c010': c010.toDataString((),
+      // 'c011': c011.toDataString((),
+      // 'c012': c012.toDataString((),
+      // 'c013': c013.toDataString((),
+      // 'c014': c014.toDataString((),
+      // 'c015': c015.toDataString((),
+      // 'c016': c016.toDataString((),
+      // 'c017': c017.toDataString((),
+      // 'c018': c018.toDataString((),
+      // 'c019': c019.toDataString((),
+      // 'c020': c020.toDataString((),
+      // 'j000': jsonEncode(j000.map((model) => model.toDataString(()).toList()),
+      // 'j001': jsonEncode(j001.map((model) => model.toDataString(()).toList()),
+      // 'j002': jsonEncode(j002.map((model) => model.toDataString(()).toList()),
+      // 'j003': jsonEncode(j003.map((model) => model.toDataString(()).toList()),
+      // 'j004': jsonEncode(j004.map((model) => model.toDataString(()).toList()),
+      // 'j005': jsonEncode(j005.map((model) => model.toDataString(()).toList()),
+      // 'j006': jsonEncode(j006.map((model) => model.toDataString(()).toList()),
+      // 'j007': jsonEncode(j007.map((model) => model.toDataString(()).toList()),
+      // 'j008': jsonEncode(j008.map((model) => model.toDataString(()).toList()),
+      // 'j009': jsonEncode(j009.map((model) => model.toDataString(()).toList()),
+      // 'j010': jsonEncode(j010.map((model) => model.toDataString(()).toList()),
+      // 'j011': jsonEncode(j011.map((model) => model.toDataString(()).toList()),
+      // 'j012': jsonEncode(j012.map((model) => model.toDataString(()).toList()),
+      // 'j013': jsonEncode(j013.map((model) => model.toDataString(()).toList()),
+      // 'j014': jsonEncode(j014.map((model) => model.toDataString(()).toList()),
+      // 'j015': jsonEncode(j015.map((model) => model.toDataString(()).toList()),
+      // 'j016': jsonEncode(j016.map((model) => model.toDataString(()).toList()),
+      // 'j017': jsonEncode(j017.map((model) => model.toDataString(()).toList()),
+      // 'j018': jsonEncode(j018.map((model) => model.toDataString(()).toList()),
+      // 'j019': jsonEncode(j019.map((model) => model.toDataString(()).toList()),
+      // 'j020': jsonEncode(j020.map((model) => model.toDataString(()).toList()),
       // 'e000': e000.toStringValue(),
       // 'e001': e001.toStringValue(),
       // 'e002': e002.toStringValue(),
@@ -1060,48 +1060,48 @@ class NewModel {
     // obj.l018 = List<String>.from(json.decode(queryParams['l018'] ?? "[]") ?? []);
     // obj.l019 = List<String>.from(json.decode(queryParams['l019'] ?? "[]") ?? []);
     // obj.l020 = List<String>.from(json.decode(queryParams['l020'] ?? "[]") ?? []);
-    // obj.c000 = OtherModel.fromBase64QueryString(queryParams['c000'] ?? OtherModel().toBase64QueryString());
-    // obj.c001 = OtherModel.fromBase64QueryString(queryParams['c001'] ?? OtherModel().toBase64QueryString());
-    // obj.c002 = OtherModel.fromBase64QueryString(queryParams['c002'] ?? OtherModel().toBase64QueryString());
-    // obj.c003 = OtherModel.fromBase64QueryString(queryParams['c003'] ?? OtherModel().toBase64QueryString());
-    // obj.c004 = OtherModel.fromBase64QueryString(queryParams['c004'] ?? OtherModel().toBase64QueryString());
-    // obj.c005 = OtherModel.fromBase64QueryString(queryParams['c005'] ?? OtherModel().toBase64QueryString());
-    // obj.c006 = OtherModel.fromBase64QueryString(queryParams['c006'] ?? OtherModel().toBase64QueryString());
-    // obj.c007 = OtherModel.fromBase64QueryString(queryParams['c007'] ?? OtherModel().toBase64QueryString());
-    // obj.c008 = OtherModel.fromBase64QueryString(queryParams['c008'] ?? OtherModel().toBase64QueryString());
-    // obj.c009 = OtherModel.fromBase64QueryString(queryParams['c009'] ?? OtherModel().toBase64QueryString());
-    // obj.c010 = OtherModel.fromBase64QueryString(queryParams['c010'] ?? OtherModel().toBase64QueryString());
-    // obj.c011 = OtherModel.fromBase64QueryString(queryParams['c011'] ?? OtherModel().toBase64QueryString());
-    // obj.c012 = OtherModel.fromBase64QueryString(queryParams['c012'] ?? OtherModel().toBase64QueryString());
-    // obj.c013 = OtherModel.fromBase64QueryString(queryParams['c013'] ?? OtherModel().toBase64QueryString());
-    // obj.c014 = OtherModel.fromBase64QueryString(queryParams['c014'] ?? OtherModel().toBase64QueryString());
-    // obj.c015 = OtherModel.fromBase64QueryString(queryParams['c015'] ?? OtherModel().toBase64QueryString());
-    // obj.c016 = OtherModel.fromBase64QueryString(queryParams['c016'] ?? OtherModel().toBase64QueryString());
-    // obj.c017 = OtherModel.fromBase64QueryString(queryParams['c017'] ?? OtherModel().toBase64QueryString());
-    // obj.c018 = OtherModel.fromBase64QueryString(queryParams['c018'] ?? OtherModel().toBase64QueryString());
-    // obj.c019 = OtherModel.fromBase64QueryString(queryParams['c019'] ?? OtherModel().toBase64QueryString());
-    // obj.c020 = OtherModel.fromBase64QueryString(queryParams['c020'] ?? OtherModel().toBase64QueryString());
-    // obj.j000 = List<String>.from(json.decode(queryParams['j000'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j001 = List<String>.from(json.decode(queryParams['j001'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j002 = List<String>.from(json.decode(queryParams['j002'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j003 = List<String>.from(json.decode(queryParams['j003'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j004 = List<String>.from(json.decode(queryParams['j004'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j005 = List<String>.from(json.decode(queryParams['j005'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j006 = List<String>.from(json.decode(queryParams['j006'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j007 = List<String>.from(json.decode(queryParams['j007'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j008 = List<String>.from(json.decode(queryParams['j008'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j009 = List<String>.from(json.decode(queryParams['j009'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j010 = List<String>.from(json.decode(queryParams['j010'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j011 = List<String>.from(json.decode(queryParams['j011'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j012 = List<String>.from(json.decode(queryParams['j012'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j013 = List<String>.from(json.decode(queryParams['j013'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j014 = List<String>.from(json.decode(queryParams['j014'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j015 = List<String>.from(json.decode(queryParams['j015'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j016 = List<String>.from(json.decode(queryParams['j016'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j017 = List<String>.from(json.decode(queryParams['j017'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j018 = List<String>.from(json.decode(queryParams['j018'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j019 = List<String>.from(json.decode(queryParams['j019'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
-    // obj.j020 = List<String>.from(json.decode(queryParams['j020'] ?? "[]") ?? []).map((item) => OtherModel.fromBase64QueryString(item)).toList();
+    // obj.c000 = OtherModel.fromDataString(queryParams['c000'] ?? OtherModel().toDataString(());
+    // obj.c001 = OtherModel.fromDataString(queryParams['c001'] ?? OtherModel().toDataString(());
+    // obj.c002 = OtherModel.fromDataString(queryParams['c002'] ?? OtherModel().toDataString(());
+    // obj.c003 = OtherModel.fromDataString(queryParams['c003'] ?? OtherModel().toDataString(());
+    // obj.c004 = OtherModel.fromDataString(queryParams['c004'] ?? OtherModel().toDataString(());
+    // obj.c005 = OtherModel.fromDataString(queryParams['c005'] ?? OtherModel().toDataString(());
+    // obj.c006 = OtherModel.fromDataString(queryParams['c006'] ?? OtherModel().toDataString(());
+    // obj.c007 = OtherModel.fromDataString(queryParams['c007'] ?? OtherModel().toDataString(());
+    // obj.c008 = OtherModel.fromDataString(queryParams['c008'] ?? OtherModel().toDataString(());
+    // obj.c009 = OtherModel.fromDataString(queryParams['c009'] ?? OtherModel().toDataString(());
+    // obj.c010 = OtherModel.fromDataString(queryParams['c010'] ?? OtherModel().toDataString(());
+    // obj.c011 = OtherModel.fromDataString(queryParams['c011'] ?? OtherModel().toDataString(());
+    // obj.c012 = OtherModel.fromDataString(queryParams['c012'] ?? OtherModel().toDataString(());
+    // obj.c013 = OtherModel.fromDataString(queryParams['c013'] ?? OtherModel().toDataString(());
+    // obj.c014 = OtherModel.fromDataString(queryParams['c014'] ?? OtherModel().toDataString(());
+    // obj.c015 = OtherModel.fromDataString(queryParams['c015'] ?? OtherModel().toDataString(());
+    // obj.c016 = OtherModel.fromDataString(queryParams['c016'] ?? OtherModel().toDataString(());
+    // obj.c017 = OtherModel.fromDataString(queryParams['c017'] ?? OtherModel().toDataString(());
+    // obj.c018 = OtherModel.fromDataString(queryParams['c018'] ?? OtherModel().toDataString(());
+    // obj.c019 = OtherModel.fromDataString(queryParams['c019'] ?? OtherModel().toDataString(());
+    // obj.c020 = OtherModel.fromDataString(queryParams['c020'] ?? OtherModel().toDataString(());
+    // obj.j000 = List<String>.from(json.decode(queryParams['j000'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j001 = List<String>.from(json.decode(queryParams['j001'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j002 = List<String>.from(json.decode(queryParams['j002'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j003 = List<String>.from(json.decode(queryParams['j003'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j004 = List<String>.from(json.decode(queryParams['j004'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j005 = List<String>.from(json.decode(queryParams['j005'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j006 = List<String>.from(json.decode(queryParams['j006'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j007 = List<String>.from(json.decode(queryParams['j007'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j008 = List<String>.from(json.decode(queryParams['j008'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j009 = List<String>.from(json.decode(queryParams['j009'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j010 = List<String>.from(json.decode(queryParams['j010'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j011 = List<String>.from(json.decode(queryParams['j011'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j012 = List<String>.from(json.decode(queryParams['j012'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j013 = List<String>.from(json.decode(queryParams['j013'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j014 = List<String>.from(json.decode(queryParams['j014'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j015 = List<String>.from(json.decode(queryParams['j015'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j016 = List<String>.from(json.decode(queryParams['j016'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j017 = List<String>.from(json.decode(queryParams['j017'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j018 = List<String>.from(json.decode(queryParams['j018'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j019 = List<String>.from(json.decode(queryParams['j019'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
+    // obj.j020 = List<String>.from(json.decode(queryParams['j020'] ?? "[]") ?? []).map((item) => OtherModel.fromDataString(item)).toList();
     // obj.e000 = SomeEnum.fromString(queryParams['e000'] ?? SomeEnum.NotSelected.toStringValue());
     // obj.e001 = SomeEnum.fromString(queryParams['e001'] ?? SomeEnum.NotSelected.toStringValue());
     // obj.e002 = SomeEnum.fromString(queryParams['e002'] ?? SomeEnum.NotSelected.toStringValue());
